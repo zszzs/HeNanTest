@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentMyinfo">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/background_title"
+            android:text="关于本机"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/unit_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="82dp"
+                android:text="设备型号  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/soft_edition"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="82dp"
+                android:text="软件版本  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/android_edition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="84dp"
+                android:text="安卓版本  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="80dp"
+                android:text="MAC地址  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/stb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="115dp"
+                android:text="STBID  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/approve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:text="认证业务主地址  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/approve_prepare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:text="认证业务备地址  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/terminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:text="终端管理主地址  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/terminal_prepare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:text="终端管理备地址  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/approve_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:text="认证业务账号  :  "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+    </LinearLayout>
+</FrameLayout>

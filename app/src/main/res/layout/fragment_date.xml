@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDate">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="设置日期和时间"
+            android:textColor="#ffffff"
+            android:background="@drawable/background_title"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/view_focus_selector"
+            android:focusable="true"
+            android:clickable="true"
+            android:id="@+id/hour_form"
+            android:nextFocusDown="@id/chose_date_form"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="使用24小时格式"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/hour"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="25sp" />-->
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_hour"
+                android:layout_marginLeft="200dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:format24Hour ="HH:mm"
+                android:format12Hour ="HH:mm"/>
+
+            <TextView
+                android:id="@+id/btn_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/checkbox_on"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/view_focus_selector"
+            android:id="@+id/chose_date_form"
+            android:nextFocusUp="@id/hour_form"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="选择日期格式"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_form"
+                android:layout_marginLeft="200dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:format24Hour ="yyyy.MM.dd\nEE     a"
+                android:format12Hour ="yyyy.MM.dd\nEE     a"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="时间服务器设置"
+            android:textColor="#ffffff"
+            android:background="@drawable/background_title"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></LinearLayout>
+    </LinearLayout>
+</FrameLayout>

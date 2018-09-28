@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_benji"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/focus"
+        android:focusable="true"
+        android:nextFocusDown="@id/item_net_set"
+        android:nextFocusUp="@id/item_restore"
+        android:text="关于本机"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_net_set"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/focus"
+        android:focusable="true"
+        android:nextFocusDown="@id/item_net_info"
+        android:nextFocusUp="@id/item_benji"
+        android:text="网络配置"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_net_info"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/focus"
+        android:focusable="true"
+        android:nextFocusDown="@id/item_date"
+        android:nextFocusUp="@id/item_net_set"
+        android:text="网络信息"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="175dp"
+        android:background="@drawable/focus"
+        android:focusable="true"
+        android:nextFocusDown="@id/item_show"
+        android:nextFocusUp="@id/item_net_info"
+        android:text="日期和时间"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_show"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/focus"
+        android:focusable="true"
+        android:nextFocusDown="@id/item_storage"
+        android:nextFocusUp="@id/item_date"
+        android:text="显示"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/focus"
+        android:focusable="true"
+        android:nextFocusDown="@id/item_advanced_set"
+        android:nextFocusUp="@id/item_show"
+        android:text="存储信息"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_advanced_set"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/focus"
+        android:focusable="true"
+        android:nextFocusDown="@id/item_restore"
+        android:nextFocusUp="@id/item_storage"
+        android:text="高级设置"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_restore"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/focus"
+        android:focusable="true"
+        android:nextFocusDown="@id/item_benji"
+        android:nextFocusUp="@id/item_advanced_set"
+        android:text="恢复出厂设置"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentA"
+    android:background="@drawable/test">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:text="有线网络设置"
+            android:background="@drawable/background_title"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/l_pppoe"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:nextFocusUp="@id/l_IP"
+            android:nextFocusDown="@id/l_dhcp"
+            android:background="@drawable/view_focus_selector">
+            <requestFocus/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/pppoe"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="PPPoE"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp">
+                <requestFocus/>
+
+            </RadioButton>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/l_dhcp"
+            android:focusable="true"
+            android:nextFocusDown="@id/l_IP"
+            android:nextFocusUp="@id/l_pppoe"
+            android:orientation="vertical"
+            android:background="@drawable/view_focus_selector">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/dhcp"
+                android:clickable="true"
+                android:text="DHCP"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp">
+
+            </RadioButton>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/l_IP"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:nextFocusDown="@id/l_pppoe"
+            android:nextFocusUp="@id/l_dhcp"
+            android:background="@drawable/view_focus_selector">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/IP"
+                android:clickable="true"
+                android:text="静态IP"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp">
+            </RadioButton>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

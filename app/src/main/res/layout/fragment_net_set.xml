@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentNetSet"
+    android:id="@+id/fr"
+    android:background="@drawable/test">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:text="网络设置"
+            android:background="@drawable/background_title"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:focusable="true"
+            android:id="@+id/net1"
+            android:background="@drawable/view_focus_selector">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:focusable="true"
+                android:nextFocusDown="@id/bluetooth"
+                android:id="@+id/net_set"
+                android:layout_marginLeft="20dp"
+                android:text="有线网络设置       设置和管理有线网络"
+                android:textSize="25sp"
+                android:textColor="#ffffff">
+
+            </TextView>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/bluetooth1"
+            android:background="@drawable/view_focus_selector"
+            android:focusable="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:focusable="true"
+                android:nextFocusUp="@id/net_set"
+                android:id="@+id/bluetooth"
+                android:text="设置蓝牙"
+                android:textColor="#ffffff"
+                android:textSize="25sp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/background_divider"/>
+
+    </LinearLayout>
+</FrameLayout>
